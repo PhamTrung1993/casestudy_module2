@@ -31,7 +31,7 @@ public class BookFunction {
         iterator = bookList.iterator();
         while(iterator.hasNext()){
             Book holder = iterator.next();
-            if (Objects.equals(holder.getBookName(), idValue)) {
+            if (Objects.equals(holder.getBookID(), idValue)) {
                 DisplayBook displayBook = new DisplayBook();
                 BookManager bookManager = new BookManager(holder, displayBook);
                 bookManager.updateDisPlayBook();

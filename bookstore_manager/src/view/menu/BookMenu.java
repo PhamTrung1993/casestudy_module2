@@ -9,24 +9,24 @@ import java.util.Iterator;
 import java.util.List;
 
 public class BookMenu {
-    public Book createBookForm() throws NumberFormatException, IOException {
+    public static Book createBookForm() throws NumberFormatException, IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println(">>>>>>>>ADD NEW BOOK<<<<<<<<<");
         System.out.print("1. Enter Book ID: ");
         String id = bufferedReader.readLine();
-        System.out.print("1. Enter Book Title: ");
+        System.out.print("2. Enter Book Title: ");
         String bookTitle = bufferedReader.readLine();
-        System.out.print("1. Enter Book Name: ");
+        System.out.print("3. Enter Book Name: ");
         String bookName = bufferedReader.readLine();
-        System.out.print("1. Enter Category: ");
+        System.out.print("4. Enter Category: ");
         String category = bufferedReader.readLine();
-        System.out.print("1. Enter Writing Master: ");
+        System.out.print("5. Enter Writing Master: ");
         String writingMaster = bufferedReader.readLine();
-        System.out.print("1. Enter Status: ");
+        System.out.print("6. Enter Status: ");
         String status = bufferedReader.readLine();
-        System.out.print("1. Enter Rent Cost: ");
+        System.out.print("7. Enter Rent Cost: ");
         long rentCost = Long.parseLong(bufferedReader.readLine());
-        System.out.print("1. Enter Price of Book: ");
+        System.out.print("8. Enter Price of Book: ");
         long bookPrice = Long.parseLong(bufferedReader.readLine());
 
         Book newBook = new Book(id, bookTitle, bookName,category,writingMaster,rentCost,bookPrice);

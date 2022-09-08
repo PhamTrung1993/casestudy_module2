@@ -7,15 +7,25 @@ public class BookLoanVoucher implements Serializable {
     private String ID;
     private LocalDate borrowedDate;
     private Borrower borrower;
+    private LocalDate returnDate;
     private Book book;
 
     public BookLoanVoucher() {
     }
 
-    public BookLoanVoucher(String id, LocalDate borrowedDate, Borrower borrower, Book book) {
+    public BookLoanVoucher(String id,Borrower borrower,Book book, LocalDate borrowedDate ) {
         this.ID = id;
         this.borrowedDate = borrowedDate;
         this.borrower = borrower;
+        this.book = book;
+        this.returnDate = null;
+    }
+
+    public BookLoanVoucher(String ID,Borrower borrower,Book book, LocalDate borrowedDate, LocalDate returnDate) {
+        this.ID = ID;
+        this.borrowedDate = borrowedDate;
+        this.borrower = borrower;
+        this.returnDate = returnDate;
         this.book = book;
     }
 
@@ -35,14 +45,6 @@ public class BookLoanVoucher implements Serializable {
         this.borrowedDate = borrowedDate;
     }
 
-    public Borrower getBookBorrower() {
-        return borrower;
-    }
-
-    public void setBookBorrower(Borrower borrower) {
-        this.borrower = borrower;
-    }
-
     public Book getBook() {
         return book;
     }
@@ -51,11 +53,29 @@ public class BookLoanVoucher implements Serializable {
         this.book = book;
     }
 
+    public Borrower getBorrower() {
+        return borrower;
+    }
+
+    public void setBorrower(Borrower borrower) {
+        this.borrower = borrower;
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public void setReturnDate(LocalDate returnDate) {
+        this.returnDate = returnDate;
+    }
+
     @Override
     public String toString() {
         return "BookLoanVoucher{" +
-                "borrowedDate=" + borrowedDate +
-                ", bookBorrower=" + borrower +
+                "ID='" + ID + '\'' +
+                ", borrowedDate=" + borrowedDate +
+                ", borrower=" + borrower +
+                ", returnDate=" + returnDate +
                 ", book=" + book +
                 '}';
     }

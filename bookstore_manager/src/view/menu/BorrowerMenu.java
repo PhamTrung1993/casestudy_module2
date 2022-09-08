@@ -9,18 +9,18 @@ import java.util.Iterator;
 import java.util.List;
 
 public class BorrowerMenu {
-    public Borrower createBorrowerForm() throws NumberFormatException, IOException {
+    public static Borrower createBorrowerForm() throws NumberFormatException, IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println(">>>>>>>>ADD NEW BORROWER<<<<<<<<<");
         System.out.print("1. Enter Borrower ID: ");
         String id = bufferedReader.readLine();
-        System.out.print("1. Enter Borrower Name: ");
+        System.out.print("2. Enter Borrower Name: ");
         String name = bufferedReader.readLine();
-        System.out.print("1. Enter Borrower Address: ");
+        System.out.print("3. Enter Borrower Address: ");
         String address = bufferedReader.readLine();
-        System.out.print("1. Enter Borrower Phone number: ");
+        System.out.print("4. Enter Borrower Phone number: ");
         String phonenumber = bufferedReader.readLine();
-        System.out.print("1. Enter Borrower Email: ");
+        System.out.print("5. Enter Borrower Email: ");
         String email = bufferedReader.readLine();
 
         Borrower newBorrower = new Borrower(id,name,address,phonenumber,email);
