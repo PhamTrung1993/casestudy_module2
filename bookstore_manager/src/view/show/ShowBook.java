@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookShow {
+public class ShowBook {
     private static final int BACK_MAIN_MENU = 9;
     private static final int LOAD_DATA_CODE = 8;
     private static final int SAVE_DATA_CODE = 7;
