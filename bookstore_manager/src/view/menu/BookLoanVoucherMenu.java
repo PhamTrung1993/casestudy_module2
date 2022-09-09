@@ -76,7 +76,7 @@ public class BookLoanVoucherMenu {
         Iterator<BookLoanVoucher> iterator = loanVoucherList.iterator();
         while (iterator.hasNext()) {
             BookLoanVoucher holder = iterator.next();
-            System.out.printf("%-20s%-20s%-20s%-20s\n",holder.getID(),holder.getBorrower(),holder.getBook(),holder.getBorrowedDate(),holder.getReturnDate());
+            System.out.printf("%-5s%-110s%-160s%-20s\n",holder.getID(),holder.getBorrower(),holder.getBook(),holder.getBorrowedDate(),holder.getReturnDate());
         }
         System.out.println("......................................................................................");
     }

@@ -41,7 +41,7 @@ public class StaffMenu {
         System.out.println("|    3. Remove Staff by Name.           |");
         System.out.println("|    4. Display Staff.                  |");
         System.out.println("|    5. Search Staff by ID.             |");
-        System.out.println("|    6. Search Staff by Name.           |");
+        System.out.println("|    6. Check Salary of Staff by ID.    |");
         System.out.println("|    7. Save Staff to database.         |");
         System.out.println("|    8. Load Staff from database.       |");
         System.out.println("|    9. Back Main menu.                 |");

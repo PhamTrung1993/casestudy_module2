@@ -81,7 +81,7 @@ public class Staff implements Serializable, Salary {
     }
 
     @Override
-    public long Salary() {
+    public long salary() {
         return this.hourly*this.workingHours;
     }
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWriteFileBook implements IReadWriteFileBook {
-    private static final String fileName="D:\\case-study-module2\\bookstore-manager\\file\\book.txt";
+    private static final String fileName="D:\\case_study_module2\\bookstore_manager\\file\\book.txt";
     private static ReadWriteFileBook instance = null;
 
     public ReadWriteFileBook() {

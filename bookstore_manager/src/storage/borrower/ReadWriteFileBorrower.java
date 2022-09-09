@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ReadWriteFileBorrower implements IReadWriteFileBorrower {
-    private static final String fileName = "bookbrrower.txt";
+    private static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\borrower.txt";
     private static ReadWriteFileBorrower instance = null;
 
     public ReadWriteFileBorrower() {

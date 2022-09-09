@@ -12,16 +12,14 @@ import java.util.List;
 import java.util.Objects;
 
 public class StaffFunction {
-    public void searchStaffbyName(List<Staff> staffList){
+    public void checkSalaryStaffbyID(List<Staff> staffList){
         Iterator<Staff> iterator;
-        String nameValue = InputValue.enterNameForm();
+        String idValue = InputValue.enterIDForm();
         iterator = staffList.iterator();
         while(iterator.hasNext()){
             Staff holder = iterator.next();
-            if (Objects.equals(holder.getStaffName(), nameValue)) {
-                DisplayStaff displayStaff = new DisplayStaff();
-                StaffManager staffManager = new StaffManager(holder, displayStaff);
-                staffManager.updateDisplayStaff();
+            if (Objects.equals(holder.getID(), idValue)) {
+                System.out.println("Salary of staff is: " + holder.salary());
             }
         }
     }

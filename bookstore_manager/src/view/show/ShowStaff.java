@@ -14,7 +14,7 @@ public class ShowStaff {
     private static final int BACK_MAIN_MENU = 9;
     private static final int LOAD_DATA_CODE = 8;
     private static final int SAVE_DATA_CODE = 7;
-    private static final int SEARCH_STAFF_BY_NAME = 6;
+    private static final int CHECK_SALARY_STAFF_BY_ID = 6;
     private static final int SEARCH_STAFF_BY_ID = 5;
     private static final int DISPLAY_ALL_STAFF = 4;
     private static final int REMOVE_STAFF_BY_NAME = 3;
@@ -58,8 +58,8 @@ public class ShowStaff {
                 case SEARCH_STAFF_BY_ID:
                     staffFunction.searchStaffbyID(staffList);
                     break;
-                case SEARCH_STAFF_BY_NAME:
-                    staffFunction.searchStaffbyName(staffList);
+                case CHECK_SALARY_STAFF_BY_ID:
+                    staffFunction.checkSalaryStaffbyID(staffList);
                     break;
                 case SAVE_DATA_CODE :
                     readWriteFileStaff.writeData(staffList);

@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ReadWriteFileBookLoanVoucher implements IReadWriteFileBookLoanVoucher{
-    public static final String fileName = "bookloanvoucher.txt";
+    public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\bookloanvoucher.txt";
     private static ReadWriteFileBookLoanVoucher instance = null;
 
     @Override

@@ -57,7 +57,7 @@ public class BookMenu {
         Iterator<Book> iterator = bookList.iterator();
         while (iterator.hasNext()) {
             Book holder = iterator.next();
-            System.out.printf("%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s\n", holder.getBookID(),holder.getBookTitle(),holder.getBookName()
+            System.out.printf("%-15s%-15s%-15s%-10s%-10s%-10s%-10s%-10s\n", holder.getBookID(),holder.getBookTitle(),holder.getBookName()
                     ,holder.getCategory(),holder.getWritingMaster(),holder.getStatus(), holder.getRentCost(), holder.getBookPrice());
         }
         System.out.println("......................................................................................");

@@ -27,12 +27,12 @@ public class ShowBookLoanVoucher {
     private static final int EXIT_PROGRAM = 0;
     private static final int INIT_VALUE = -1;
     public static List<BookLoanVoucher> initBookLoanVousher() {
-        List<BookLoanVoucher> bookList = new ArrayList<>();
+        List<BookLoanVoucher> loanVoucherList = new ArrayList<>();
         Borrower hung = new Borrower();
-        Book book = new Book();
-        BookLoanVoucher loanVoucher1 = new BookLoanVoucher("L01",hung,book, LocalDate.of(2022,8,31));
-        bookList.add(loanVoucher1);
-        return bookList;
+        Book book = new Book("B01","Under the sea","Science","Trung","New",10000,500000);
+        BookLoanVoucher loanVoucher1 = new BookLoanVoucher("L01",hung,book, LocalDate.of(2022,8,31),LocalDate.of(2022,9,2));
+        loanVoucherList.add(loanVoucher1);
+        return loanVoucherList;
     }
     public static void menuOfBookLoanVoucher() throws IOException {
         BookLoanVoucherFunction bookLoanVoucherFunction = new BookLoanVoucherFunction();
@@ -64,7 +64,7 @@ public class ShowBookLoanVoucher {
                     bookLoanVoucherFunction.searchBookLoanVoucherbyID(loanVoucherList);
                     break;
                 case PAY_LOAN_VOUCHER_BY_ID:
-                    bookLoanVoucherFunction.payBookLoanVoucherById();
+                    bookLoanVoucherFunction.payBookLoanVoucherById(loanVoucherList);
                     break;
                 case SAVE_DATA_CODE :
                     readWriteFileBookLoanVoucher.writeData(loanVoucherList);

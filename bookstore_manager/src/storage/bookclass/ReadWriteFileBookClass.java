@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ReadWriteFileBookClass implements IReadWriteFileBookClass{
-    public static final String fileName = "bookclass.txt";
+    public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\bookclass.txt";
     private static ReadWriteFileBookClass instance = null;
 
     public ReadWriteFileBookClass() {

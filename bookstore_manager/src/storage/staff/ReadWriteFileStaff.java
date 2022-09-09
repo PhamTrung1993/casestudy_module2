@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWriteFileStaff implements IReadWriteFileStaff{
-    public static final String fileName = "staff.txt";
+    public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\staff.txt";
     private static ReadWriteFileStaff instance = null;
 
     public ReadWriteFileStaff() {
