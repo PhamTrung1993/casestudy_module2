@@ -62,8 +62,8 @@ public class BookLoanVoucherMenu {
         System.out.println("|    4. Display Book Loan Voucher.      |");
         System.out.println("|    5. Search Book Loan Voucher by ID. |");
         System.out.println("|    6. Pay Book Loan Voucher by ID.    |");
-        System.out.println("|    7. Save Borrower to database.      |");
-        System.out.println("|    8. Load Borrower from database.    |");
+        System.out.println("|    7. Save Loan Voucher to database.  |");
+        System.out.println("|    8. Load Loan Voucher from database.|");
         System.out.println("|    9. Back Main menu.                 |");
         System.out.println("|    0. Exit program.                   |");
         System.out.println("-----------------------------------------");

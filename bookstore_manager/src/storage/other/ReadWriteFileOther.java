@@ -3,11 +3,12 @@ package storage.other;
 import model.Other;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ReadWriteFileOther implements IReadWriteFileOther {
-    public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\bookclass.txt";
+    public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\other.txt";
     private static ReadWriteFileOther instance = null;
 
     public ReadWriteFileOther() {
@@ -15,7 +16,7 @@ public class ReadWriteFileOther implements IReadWriteFileOther {
 
     @Override
     public List<Other> readData() {
-        List<Other> otherList = new LinkedList<>();
+        List<Other> otherList = new ArrayList<>();
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(fileName);
