@@ -2,15 +2,15 @@ package model;
 
 import java.io.Serializable;
 
-public class BookClass implements Serializable {
+public class Other implements Serializable {
     private String className;
     private Book book;
     private int amount;
 
-    public BookClass() {
+    public Other() {
     }
 
-    public BookClass(String className, Book book, int amount) {
+    public Other(String className, Book book, int amount) {
         this.className = className;
         this.book = book;
         this.amount = amount;

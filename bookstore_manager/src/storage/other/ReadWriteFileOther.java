@@ -1,21 +1,21 @@
-package storage.bookclass;
+package storage.other;
 
-import model.BookClass;
+import model.Other;
 
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ReadWriteFileBookClass implements IReadWriteFileBookClass{
+public class ReadWriteFileOther implements IReadWriteFileOther {
     public static final String fileName = "D:\\case_study_module2\\bookstore_manager\\file\\bookclass.txt";
-    private static ReadWriteFileBookClass instance = null;
+    private static ReadWriteFileOther instance = null;
 
-    public ReadWriteFileBookClass() {
+    public ReadWriteFileOther() {
     }
 
     @Override
-    public List<BookClass> readData() {
-        List<BookClass> bookClassList = new LinkedList<>();
+    public List<Other> readData() {
+        List<Other> otherList = new LinkedList<>();
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(fileName);
@@ -36,17 +36,17 @@ public class ReadWriteFileBookClass implements IReadWriteFileBookClass{
         } catch (IOException | ClassNotFoundException exception) {
             exception.printStackTrace();
         }
-        bookClassList = (List<BookClass>) obj;
+        otherList = (List<Other>) obj;
         System.out.println("Load finish!");
-        return bookClassList;
+        return otherList;
     }
 
     @Override
-    public void writeData(List<BookClass> bookClasses) {
+    public void writeData(List<Other> others) {
         try {
             FileOutputStream fos = new FileOutputStream(fileName);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(bookClasses);
+            oos.writeObject(others);
             oos.close();
             fos.close();
             System.out.println("Save finish!");
