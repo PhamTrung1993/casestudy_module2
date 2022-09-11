@@ -24,7 +24,7 @@ public class Main {
     private static final int EXIT_PROGRAM = 0;
     public static void main(String[] args) {
         try {
-           ShowStaff.menuOfStaff();
+           mainMenu();
         } catch (IOException e) {
             e.printStackTrace();
         }
