@@ -61,10 +61,7 @@ public class ShowBorrower {
                     readWriteFileBorrower.writeData(borrowerList);
                     break;
                 case LOAD_DATA_CODE :
-                    List<Borrower> newReadWriteFileBorrower = readWriteFileBorrower.readData();
-                    for (Borrower bookBorrower: newReadWriteFileBorrower) {
-                        System.out.println(bookBorrower);
-                    }
+                    borrowerList = readWriteFileBorrower.readData();
                     break;
 
                 case BACK_MAIN_MENU :

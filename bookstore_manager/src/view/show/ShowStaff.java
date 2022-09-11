@@ -65,10 +65,7 @@ public class ShowStaff {
                     readWriteFileStaff.writeData(staffList);
                     break;
                 case LOAD_DATA_CODE :
-                    List<Staff> newReadWriteFileStaff = readWriteFileStaff.readData();
-                    for (Staff staff: newReadWriteFileStaff) {
-                        System.out.println(staff);
-                    }
+                    staffList = readWriteFileStaff.readData();
                     break;
 
                 case BACK_MAIN_MENU :

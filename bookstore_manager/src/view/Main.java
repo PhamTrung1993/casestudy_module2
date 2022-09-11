@@ -24,7 +24,7 @@ public class Main {
     private static final int EXIT_PROGRAM = 0;
     public static void main(String[] args) {
         try {
-            mainMenu();
+           ShowStaff.menuOfStaff();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -33,7 +33,7 @@ public class Main {
 
         do {
             System.out.println();
-            System.out.println("    BOOK MARKET MANAGEMENT PROGRAM      ");
+            System.out.println("    BOOK STORE MANAGEMENT PROGRAM       ");
             System.out.println("-------------------***------------------");
             System.out.println("|   1. Book Menu.                      |");
             System.out.println("|   2. Borrower Menu .                 |");
@@ -42,7 +42,7 @@ public class Main {
             System.out.println("|   5. Staff Menu.                     |");
             System.out.println("|   0. Exit Program.                   |");
             System.out.println("----------------------------------------");
-            System.out.print("Mời chọn chức năng: ");
+            System.out.print("Select Option: ");
             int option = Integer.parseInt(scanner.nextLine());
             switch (option) {
                 case BOOK_MENU:

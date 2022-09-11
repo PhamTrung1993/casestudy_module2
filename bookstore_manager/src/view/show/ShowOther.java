@@ -71,10 +71,7 @@ public class ShowOther {
                     readWriteFileOther.writeData(otherList);
                     break;
                 case LOAD_DATA_CODE :
-                    List<Other> newReadWriteFileOther = readWriteFileOther.readData();
-                    for (Other other: newReadWriteFileOther) {
-                        System.out.println(other);
-                    }
+                    otherList = readWriteFileOther.readData();
                     break;
 
                 case BACK_MAIN_MENU :

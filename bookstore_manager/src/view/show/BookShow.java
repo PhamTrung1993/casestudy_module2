@@ -66,10 +66,7 @@ public class BookShow {
                     readWriteFileBook.writeData(bookList);
                     break;
                 case LOAD_DATA_CODE :
-                    List<Book> newReadWriteFileBook = readWriteFileBook.readData();
-                    for (Book book: newReadWriteFileBook) {
-                        System.out.println(book);
-                    }
+                    bookList = readWriteFileBook.readData();
                     break;
 
                 case BACK_MAIN_MENU :

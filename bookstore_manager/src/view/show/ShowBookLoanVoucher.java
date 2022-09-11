@@ -70,10 +70,7 @@ public class ShowBookLoanVoucher {
                     readWriteFileBookLoanVoucher.writeData(loanVoucherList);
                     break;
                 case LOAD_DATA_CODE :
-                    List<BookLoanVoucher> newReadWriteFileBookLoanvoucher = readWriteFileBookLoanVoucher.readData();
-                    for (BookLoanVoucher loanVoucher: newReadWriteFileBookLoanvoucher) {
-                        System.out.println(loanVoucher);
-                    }
+                    loanVoucherList = readWriteFileBookLoanVoucher.readData();
                     break;
 
                 case BACK_MAIN_MENU :

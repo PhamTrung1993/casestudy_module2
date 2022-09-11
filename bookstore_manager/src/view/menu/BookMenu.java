@@ -48,7 +48,7 @@ public class BookMenu {
         System.out.println("|    9. Back Main menu.                 |");
         System.out.println("|    0. Exit program.                   |");
         System.out.println("-----------------------------------------");
-        System.out.print("  Select function: ");
+        System.out.print("  Select option: ");
         int option = Integer.parseInt(bufferedReader.readLine());
         return option;
     }
