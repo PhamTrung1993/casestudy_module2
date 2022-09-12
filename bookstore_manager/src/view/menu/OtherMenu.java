@@ -54,7 +54,7 @@ public class OtherMenu {
         Iterator<Other> iterator = otherList.iterator();
         while (iterator.hasNext()) {
             Other holder = iterator.next();
-            System.out.printf("%%-15s%-15s%-15s%-10s%-10s\n",holder.getID(),holder.getName(),holder.getCategory(),holder.getOrigin(),holder.getPrice(),holder.getAmount());
+            System.out.printf("%-5s%-25s%-15s%-20s%-10s%-10s\n",holder.getID(),holder.getName(),holder.getCategory(),holder.getOrigin(),holder.getPrice(),holder.getAmount());
         }
         System.out.println("......................................................................................");
     }

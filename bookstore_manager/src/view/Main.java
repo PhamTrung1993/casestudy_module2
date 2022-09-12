@@ -20,7 +20,6 @@ public class Main {
     private static final int BOOK_LOAN_VOUCHER_MENU= 3;
     private static final int BORROWER_MENU= 2;
     private static final int BOOK_MENU = 1;
-    private static final String INVALID_OPTION_STRING = "Invalid Option";
     private static final int EXIT_PROGRAM = 0;
     public static void main(String[] args) {
         try {
